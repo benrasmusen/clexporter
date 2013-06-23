@@ -3,7 +3,7 @@ Craigslist OPML Exporter
 
 A super simple PHP script that generates an OPML file of all Craigslist cities for a user submitted search string.
 
-Use it here: (http://www.benrasmusen.com/clexporter/)[http://www.benrasmusen.com/clexporter/]
+Use it here: [http://www.benrasmusen.com/clexporter/](http://www.benrasmusen.com/clexporter/)
 
 
 -------------------------------------
