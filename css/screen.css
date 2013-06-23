@@ -1,0 +1,24 @@
+@import url(reset.css);
+@import url(typography.css);
+
+body{margin:auto;width:800px;background-color:#eee;}
+
+h1{font-size:3em;margin-top:0;}
+
+p, ul{font-size:1em;}
+
+label{font-weight:bold;font-size:1.5em;float:left; width:8em;}
+
+input{font-size:1.5em;}
+
+ul{list-style-type:none;}
+
+li{margin-left:1.5em;}
+
+#wrapper {background-color:#fff;padding:3em;margin-top:3em;}
+
+#download_file {clear:both;}
+
+#ajax-loading{float:left;}
+
+.ajax-loading {padding-right:25px; background: url(../images/spinner.gif) no-repeat right center;}

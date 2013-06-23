@@ -1,0 +1,45 @@
+/* reset.css: Reset some default browser styles, and add a few of our own. This levels the playing field, and makes CSS more straightforward. Based on code by Eric Meyer http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+html,body,div,span,a,img,h1,h2,h3,h4,h5,h6,p,blockquote,q,cite,abbr,acronym,caption,address,strong,strike,del,big,small,font,dfn,ins,kbd,s,samp,tt,var,pre,code,dfn,var,iframe,applet,object,fieldset,form,label,legend,dl,dt,dd,ul,ol,li,table,caption,tbody,tfoot,thead,tr,th,td{
+	border: 0;
+	font-family: inherit;
+	font-size:100%;
+	font-style:inherit; 
+	font-weight:inherit;
+	margin:0;
+	outline: 0;
+	padding:0;
+	vertical-align: baseline;
+}
+
+caption,th,td {text-align:left}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {content:''}
+
+* {behavior: url(iepngfix/iepngfix.htc)} /* IE 5.5+ PNG transparency fix */
+
+/* Some new classes: */
+
+.clear {clear:both}
+.hide {left:-32697px; position:absolute;}
+.mute {color:#B5864E}
+
+/* Shortcut for image replacements: just add background-image and width/height. */
+.ir {
+	background-repeat:no-repeat;
+	display:block;
+	text-indent:-32697px; /* maximum text-indent supported by Opera browser */
+}
+
+.pullquote-l {
+	float:left;
+	margin:0 .5em 0 0;
+}
+.pullquote-r {
+	float:right;
+	margin:0 0 0 .5em;
+}
