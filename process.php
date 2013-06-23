@@ -32,11 +32,20 @@
 		}
 		$opml .= '</outline></body></opml>';
 		$opml_file_name = "craigslist_opml_".time().".xml";
-		$opml_file = fopen($opml_file_name, 'w');
+		$opml_file = fopen('./opml/'.$opml_file_name, 'w');
 		fwrite($opml_file, $opml);
+
+		// clean up old files
+		$files = glob('./opml/*.xml');
+		foreach($files as $file) {
+			if(is_file($file) && time() - filemtime($file) >= 24*60*60) { // 1 day
+				unlink($file);
+			}
+		}
+
 		echo '<div id="download_file">
-			<p class="donwload_file"><a href="'.$opml_file_name.'">Download OPML File (right click and save as)</a></p>
-			<p class="validation_image"><a href="http://validator.opml.org/?url=http%3A%2F%2Fbenrasmusen.com%2Fclexporter%2F'.$opml_file_name.'"><img src="http://images.scripting.com/archiveScriptingCom/2005/10/31/valid3.gif" width="114" height="20" border="0" alt="OPML checked by validator.opml.org."></a></p>
+			<p class="donwload_file"><a href="opml/'.$opml_file_name.'">Download OPML File (right click and save as)</a></p>
+			<p class="validation_image"><a href="http://validator.opml.org/?url=http%3A%2F%2Fwww.benrasmusen.com%2Fclexporter%2Fopml%2F'.$opml_file_name.'"><img src="http://images.scripting.com/archiveScriptingCom/2005/10/31/valid3.gif" width="114" height="20" border="0" alt="OPML checked by validator.opml.org."></a></p>
 		</div>';
 	}
 ?>
