@@ -33,7 +33,7 @@
 			<div id="download_file"></div>
 			
 			<hr/>
-			<p>I no longer do any ongoing development for this project, I have released it under the <a href="http://www.opensource.org/licenses/mit-license.php" title="Open Source Initiative OSI - The MIT License:Licensing | Open Source Initiative">MIT License</a> on <a href="http://code.google.com/p/craigslist-opml-exporter/" title="craigslist-opml-exporter - Google Code">Google Code</a>. If this project was of interest to you please check out the rest of <a href="http://benrasmusen.com" title="benrasmusen.com">benrasmusen.com</a>.</p>
+			<p>I no longer do any ongoing development for this project, I have released it under the <a href="http://www.opensource.org/licenses/mit-license.php" title="Open Source Initiative OSI - The MIT License:Licensing | Open Source Initiative">MIT License</a> on <a href="https://github.com/benrasmusen/clexporter" title="clexporter - Github">Github</a>. If this project was of interest to you please check out the rest of <a href="http://www.benrasmusen.com" title="benrasmusen.com">benrasmusen.com</a>.</p>
 		</div>
 		<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
